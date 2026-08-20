@@ -27,8 +27,8 @@ function Navbar() {
             LinkedIn
           </a>
 
-          <a className="contact-link" href="mailto:iedwini777@gmail.com">
-            Email me
+          <a className="contact-link" href="#contact">
+            Contact
           </a>
         </div>
       </nav>

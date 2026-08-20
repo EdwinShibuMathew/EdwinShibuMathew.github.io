@@ -1,0 +1,104 @@
+.contact-section {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 100px 0;
+  border-top: 1px solid #dbe3ef;
+}
+
+.contact-panel {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 56px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #102a4c 0%, #0b1f3a 100%);
+  box-shadow: 0 24px 60px rgba(16, 42, 76, 0.18);
+}
+
+.contact-content {
+  max-width: 690px;
+}
+
+.contact-label {
+  margin: 0 0 16px;
+  color: #8eb8ff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-content h2 {
+  margin: 0;
+  color: white;
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.contact-description {
+  margin: 22px 0 0;
+  color: #c9d7e9;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 12px;
+  min-width: 190px;
+}
+
+.contact-button {
+  display: block;
+  padding: 13px 18px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact-button-primary {
+  background-color: white;
+  color: #102a4c;
+}
+
+.contact-button-primary:hover {
+  background-color: #dce9ff;
+}
+
+.contact-button-secondary {
+  border-color: #587397;
+  color: white;
+}
+
+.contact-button-secondary:hover {
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 800px) {
+  .contact-panel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .contact-actions {
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .contact-section {
+    width: min(100% - 32px, 1120px);
+    padding: 70px 0;
+  }
+
+  .contact-panel {
+    padding: 32px 24px;
+  }
+}

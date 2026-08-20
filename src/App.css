@@ -1,0 +1,191 @@
+.site-shell {
+  min-height: 100vh;
+}
+
+.site-header {
+  border-bottom: 1px solid #dbe3ef;
+  background-color: rgba(248, 250, 252, 0.9);
+}
+
+.navigation {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 22px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  color: #102a4c;
+  font-size: 1.05rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.navigation-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navigation-links a {
+  color: #44546a;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navigation-links a:hover {
+  color: #145bd7;
+}
+
+.navigation-links .contact-link {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: #102a4c;
+  color: white;
+}
+
+.navigation-links .contact-link:hover {
+  background-color: #145bd7;
+  color: white;
+}
+
+.hero {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 100px 0 70px;
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin: 0 0 24px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background-color: #e1ecff;
+  color: #145bd7;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 900px;
+  margin: 0;
+  color: #102a4c;
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.hero-description {
+  max-width: 720px;
+  margin: 32px 0 0;
+  color: #526176;
+  font-size: 1.15rem;
+  line-height: 1.75;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 36px;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 20px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button-primary {
+  background-color: #145bd7;
+  color: white;
+}
+
+.button-primary:hover {
+  background-color: #0f49b0;
+}
+
+.button-secondary {
+  border-color: #b7c4d6;
+  background-color: white;
+  color: #102a4c;
+}
+
+.button-secondary:hover {
+  border-color: #145bd7;
+  color: #145bd7;
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+  margin: 80px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.proof-grid li {
+  padding: 22px;
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.proof-grid span {
+  display: block;
+  margin-bottom: 8px;
+  color: #6b778a;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.proof-grid strong {
+  color: #102a4c;
+  font-size: 1rem;
+}
+
+@media (max-width: 720px) {
+  .navigation {
+    width: min(100% - 32px, 1120px);
+  }
+
+  .navigation-links > a:not(.contact-link) {
+    display: none;
+  }
+
+  .hero {
+    width: min(100% - 32px, 1120px);
+    padding-top: 70px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.7rem, 14vw, 4.2rem);
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .proof-grid {
+    grid-template-columns: 1fr;
+    margin-top: 60px;
+  }
+}

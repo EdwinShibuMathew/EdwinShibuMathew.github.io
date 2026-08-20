@@ -1,0 +1,128 @@
+.experience-section {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 100px 0;
+  border-top: 1px solid #dbe3ef;
+}
+
+.section-introduction {
+  max-width: 720px;
+  margin-bottom: 42px;
+}
+
+.section-label {
+  margin: 0 0 14px;
+  color: #145bd7;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-introduction h2 {
+  margin: 0;
+  color: #102a4c;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.section-summary {
+  margin: 22px 0 0;
+  color: #526176;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.experience-card {
+  padding: 38px;
+  border: 1px solid #dbe3ef;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.experience-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e5eaf1;
+}
+
+.experience-company {
+  margin: 0 0 8px;
+  color: #145bd7;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.experience-heading h3 {
+  margin: 0;
+  color: #102a4c;
+  font-size: 1.6rem;
+}
+
+.experience-location,
+.experience-date {
+  color: #6b778a;
+}
+
+.experience-location {
+  margin: 8px 0 0;
+}
+
+.experience-date {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.experience-list {
+  display: grid;
+  gap: 16px;
+  max-width: 900px;
+  margin: 30px 0;
+  padding-left: 22px;
+  color: #44546a;
+  line-height: 1.7;
+}
+
+.experience-list li::marker {
+  color: #145bd7;
+}
+
+.technology-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.technology-list span {
+  padding: 7px 11px;
+  border-radius: 999px;
+  background-color: #eef4ff;
+  color: #164eae;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  .experience-section {
+    width: min(100% - 32px, 1120px);
+    padding: 70px 0;
+  }
+
+  .experience-card {
+    padding: 24px;
+  }
+
+  .experience-heading {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .experience-date {
+    white-space: normal;
+  }
+}

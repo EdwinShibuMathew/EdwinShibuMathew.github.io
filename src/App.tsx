@@ -3,6 +3,8 @@ import Experience from './components/Experience'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
+import Education from './components/Education'
+import Skills from './components/Skills'
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Hero />
         <Experience />
         <Projects />
+        <Skills />
+        <Education />
       </main>
     </div>
   )
